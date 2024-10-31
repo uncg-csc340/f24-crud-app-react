@@ -32,7 +32,7 @@ const StudentListComponent = () => {
                     <tbody>
                         {students.map(student => (
                                 <tr key={student.studentId}>
-                                <td><Link to={`students/${student.studentId}`}>{student.studentId}</Link></td>
+                                <td><Link to={`/${student.studentId}`}>{student.studentId}</Link></td>
                                 <td>{student.name}</td>
                                 <td>{student.major}</td>
                                 <td>{student.gpa}</td>
