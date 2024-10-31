@@ -11,7 +11,7 @@ const StudentDetailsComponent = () => {
         StudentService.getStudentById(studentId).then((res) => {
             setStudent(res.data);
         });
-    }, []);
+    }, [studentId]);
 
     return (
         <div>
