@@ -8,6 +8,7 @@ const StudentDetailsComponent = () => {
     const [student, setStudent] = useState([]);
 
     useEffect(() => {
+        document.title = 'Student Details';
         StudentService.getStudentById(studentId).then((res) => {
             setStudent(res.data);
         });
